@@ -40,7 +40,7 @@ function Navbar() {
   if (isDesktop) {
     return (
       <nav
-        className={`${PILL_BASE} w-fit max-w-[calc(100%-3rem)] flex items-center gap-10 px-8 py-4`}
+        className={`${PILL_BASE} w-fit max-w-[calc(100%-3rem)] flex items-center gap-10 px-10 py-2.5`}
       >
         <ul className="flex gap-10 list-none text-base m-0 p-0">
           {NAV_LINKS.map((link) => (
