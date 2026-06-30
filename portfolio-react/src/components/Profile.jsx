@@ -32,20 +32,7 @@ function Profile() {
         {/* TODO: replace with your title */}
         <p className="text-2xl max-[600px]:text-xl">Software Developer</p>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-2">
-          <button
-            className="text-sm sm:text-base font-semibold px-4 py-1 rounded-full border border-ink hover:bg-ink hover:text-white transition-colors cursor-pointer"
-            onClick={downloadResume}
-          >
-            Resume
-          </button>
-          <button
-            className="text-sm sm:text-base font-semibold px-4 py-1 rounded-full border border-ink hover:bg-ink hover:text-white transition-colors cursor-pointer"
-            onClick={goToContact}
-          >
-            Contact
-          </button>
-        </div>
+        
 
         <div className="flex justify-center items-center gap-6 px-7 py-2.5 bg-[#1f1f1f] mt-4 rounded-lg w-fit shadow-lg shadow-black/20">
           <FontAwesomeIcon
