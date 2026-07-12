@@ -1,5 +1,5 @@
 import { assets } from '../assets/assetPaths.js';
-import { scrollToId } from '../utils/scrollToId.js';
+import { ArrowDown } from "lucide-react";
 
 // TODO: replace with your own projects
 const PROJECTS = [
@@ -69,12 +69,12 @@ function Projects() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-center max-[1200px]:hidden">
-        <img
-          src={assets.arrowIcon}
-          alt="Arrow icon"
-          className="cursor-pointer h-8 max-w-full max-h-full"
-          onClick={() => scrollToId('contact')}
+      <div className="flex justify-center items-center mt-12 max-[1200px]:hidden">
+        <ArrowDown
+          size={36}
+          strokeWidth={2}
+          className="cursor-pointer text-gray-800 hover:text-black transition-all duration-300 animate-bounce"
+          
         />
       </div>
     </section>
