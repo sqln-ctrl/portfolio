@@ -12,8 +12,8 @@ import {
 
 function Profile() {
 
-  function downloadResume() {
-    window.open(assets.resumePdf, "_blank");
+  function openResume() {
+    window.open(assets.resumePdf, "_blank", "noopener,noreferrer");
   }
 
 
@@ -37,14 +37,14 @@ function Profile() {
 
       {/* Profile Image */}
       <div
-        className="flex h-[350px] w-[290px] mt-4 rounded-full overflow-hidden 
+        className="flex h-[350px] w-[270px] mt-10 rounded-full overflow-hidden 
         max-[1200px]:w-[275px] max-[1200px]:h-[275px] 
         max-[1200px]:mx-auto max-[1200px]:mb-8"
       >
         <img
           src={assets.profilePic}
           alt="Saqlain Shah"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
         />
       </div>
 
@@ -59,7 +59,7 @@ function Profile() {
 
 
         <h1 className="text-6xl max-[600px]:text-3xl">
-          Saqlain Shah
+          Saqlain Naqvi
         </h1>
 
 
@@ -73,7 +73,7 @@ function Profile() {
         <div className="flex gap-4 mt-5">
 
           <button
-            onClick={downloadResume}
+            onClick={openResume}
             className="px-5 py-2 rounded-full border border-black hover:bg-black hover:text-white transition-all"
           >
             Resume
@@ -165,7 +165,7 @@ function Profile() {
             hover:scale-110 transition-all duration-300"
             onClick={() =>
               window.open(
-                "mailto:codewithsqln@gmail.com",
+                "https://mail.google.com/mail/?view=cm&fs=1&to=codewithsqln@gmail.com&su=Portfolio Inquiry",
                 "_blank"
               )
             }
@@ -179,10 +179,6 @@ function Profile() {
                 className="text-gray-300 hover:text-red-500"
               />
             </div>
-
-
-            
-
 
           </div>
 

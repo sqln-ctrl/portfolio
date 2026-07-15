@@ -6,17 +6,12 @@ import { scrollToId } from "../utils/scrollToId.js";
 const NAV_LINKS = [
   { target: "profile", label: "Home" },
   { target: "about", label: "About" },
-  { target: "experience", label: "Skills" },
   { target: "projects", label: "Projects" },
-  ,
-  { target: "contact", label: "Contact" },
 ];
 
 const COMPACT_LINKS = [
   { target: "profile", label: "Home", Icon: Home },
-  { target: "about", label: "About", Icon: User },
-  { target: "experience-2", label: "Resume", Icon: FileText },
-  { target: "contact", label: "Contact", Icon: Mail },
+  { target: "about", label: "About", Icon: User }
 ];
 
 const PILL_BASE =
@@ -66,13 +61,13 @@ function Navbar() {
     <nav
       className={`${PILL_BASE} flex items-center ${
         isScrolled
-          ? "bg-black/50  px-5 py-2 gap-6"
+          ? "bg-black/50  px-4 py-2 gap-4"
           : "bg-black  px-10 py-3 gap-10"
       }`}
     >
         <ul
           className={`flex items-center list-none m-0 p-0 ${
-            isScrolled ? "gap-6" : "gap-10"
+            isScrolled ? "gap-4" : "gap-10"
           }`}
         >
           {(isScrolled ? COMPACT_LINKS : NAV_LINKS).map((link) => (

@@ -4,23 +4,11 @@ import { ArrowDown } from "lucide-react";
 // TODO: replace with your own projects
 const PROJECTS = [
   {
-    title: 'Project One',
-    image: assets.project1,
-    githubUrl: 'https://github.com/Aashay2701/minimalist_portfolio',
+    title: 'Andaaz An Online Watch Store',
+    githubUrl: 'https://github.com/sqln-ctrl/behreadab-store',
     liveUrl: 'https://dqy00000xs9kxmab-dev-ed.develop.my.site.com/AashayWase/s/',
-  },
-  {
-    title: 'Project Two',
-    image: assets.project2,
-    githubUrl: 'https://github.com/',
-    liveUrl: 'https://github.com/',
-  },
-  {
-    title: 'Project Three',
-    image: assets.project3,
-    githubUrl: 'https://github.com/',
-    liveUrl: 'https://github.com/',
-  },
+  }
+ 
 ];
 
 function ProjectCard({ title, image, githubUrl, liveUrl }) {
@@ -30,10 +18,8 @@ function ProjectCard({ title, image, githubUrl, liveUrl }) {
 
   return (
     <div className="p-6 flex-1 bg-offwhite rounded-2xl border border-line text-center pt-[15vh]">
-      <div className="flex text-left flex-wrap gap-10 justify-around">
-        <img src={image} alt={title} className="rounded-2xl w-[90%] h-[90%]" />
-      </div>
-      <h2 className="text-slate font-semibold text-3xl m-4 text-black max-[600px]:text-xl">
+      
+      <h2 className="text-slate font-semibold text-3xl m-4 max-[600px]:text-xl">
         {title}
       </h2>
       <div className="flex justify-center gap-4">
@@ -73,8 +59,7 @@ function Projects() {
         <ArrowDown
           size={36}
           strokeWidth={2}
-          className="cursor-pointer text-gray-800 hover:text-black transition-all duration-300 animate-bounce"
-          
+          className="cursor-pointer text-gray-800 hover:text-black transition-all duration-300 animate-bounce"  
         />
       </div>
     </section>

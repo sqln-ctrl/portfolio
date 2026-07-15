@@ -1,11 +1,4 @@
-import { scrollToId } from '../utils/scrollToId.js';
-
-const NAV_LINKS = [
-  { target: 'about', label: 'About' },
-  { target: 'experience', label: 'Experience' },
-  { target: 'projects', label: 'Projects' },
-  { target: 'contact', label: 'Contact' },
-];
+import { scrollToId } from "../utils/scrollToId.js";
 
 function Footer() {
   function handleNavClick(e, target) {
@@ -14,10 +7,10 @@ function Footer() {
   }
 
   return (
-    <footer className="h-[26vh] max-[600px]:h-[40vh] mx-4">
-      
-      {/* TODO: replace name/year */}
-      <p className="text-center">Copyright &#169; 2026 Saqlain Naqvi. All Rights Reserved.</p>
+    <footer className="w-full bg-black py-4 mt-20">
+      <p className="text-center text-white text-sm md:text-base">
+        Copyright &#169; 2026 Saqlain Naqvi. All Rights Reserved.
+      </p>
     </footer>
   );
 }
