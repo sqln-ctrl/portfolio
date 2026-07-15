@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: point this at your own font file (public/fonts/...) or remove and
+   use a Google Fonts <link> in index.html instead. */
+@font-face {
+  font-family: 'SUSE Mono Variable';
+  src: url('/fonts/SUSEMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply font-mono text-black;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  @apply text-slate;
+}
+
+a {
+  @apply text-black no-underline transition-all duration-300;
+}
+
+a:hover {
+  @apply text-gray-500 underline;
+  text-underline-offset: 1rem;
+}
