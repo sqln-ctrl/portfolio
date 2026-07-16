@@ -92,9 +92,34 @@ function Navbar() {
     );
   }
 
+  if (!isDesktop) {
+  if (isScrolled) {
+    return (
+      <nav
+        className={`${PILL_BASE} flex items-center bg-black/50 px-4 py-2 gap-4`}
+      >
+        <ul className="flex items-center gap-4 list-none m-0 p-0">
+          {COMPACT_LINKS.map((link) => (
+            <li key={link.target}>
+              <a
+                href={`#${link.target}`}
+                onClick={(e) => handleNavClick(e, link.target)}
+                aria-label={link.label}
+                title={link.label}
+                className="flex items-center justify-center text-white hover:text-gray-300 transition-colors"
+              >
+                <link.Icon size={20} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  }
+
   return (
     <nav
-      className={`${PILL_BASE} bg-[#0a0e17] w-[calc(100%-3rem)] max-w-[480px] flex items-center justify-between px-6 py-4`}
+      className={`${PILL_BASE} bg-[#0a0e17] w-[calc(100%-3rem)] max-w-[480px] flex items-center justify-between px-4 py-2`}
     >
       <span className="text-lg font-semibold text-white">Menu</span>
 
@@ -108,9 +133,7 @@ function Navbar() {
         >
           <span
             className={`h-0.5 w-full bg-white transition-all duration-300 ${
-              isMenuOpen
-                ? "rotate-45 translate-y-[10px]"
-                : ""
+              isMenuOpen ? "rotate-45 translate-y-[10px]" : ""
             }`}
           />
 
@@ -122,9 +145,7 @@ function Navbar() {
 
           <span
             className={`h-0.5 w-full bg-white transition-all duration-300 ${
-              isMenuOpen
-                ? "-rotate-45 -translate-y-[10px]"
-                : ""
+              isMenuOpen ? "-rotate-45 -translate-y-[10px]" : ""
             }`}
           />
         </div>
@@ -139,7 +160,7 @@ function Navbar() {
               <a
                 href={`#${link.target}`}
                 onClick={(e) => handleNavClick(e, link.target)}
-                className="block whitespace-nowrap px-8 py-3 text-center text-gray-300 no-underline hover:text-white"
+                className="block whitespace-nowrap px-8 py-3 text-center text-gray-300 hover:text-white"
               >
                 {link.label}
               </a>
@@ -150,5 +171,5 @@ function Navbar() {
     </nav>
   );
 }
-
+}
 export default Navbar;
