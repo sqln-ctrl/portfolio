@@ -87,7 +87,7 @@ function Contact() {
       </div>
 
       <span className="text-gray-300 text-sm font-medium">
-        Saqlain Shah
+        Saqlain Naqvi
       </span>
 
     </div>
