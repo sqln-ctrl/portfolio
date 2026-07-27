@@ -64,7 +64,7 @@ function Profile() {
 
 
         <p className="text-2xl max-[600px]:text-xl">
-          Full Stack Developer
+          Software Engineer 
         </p>
 
 
