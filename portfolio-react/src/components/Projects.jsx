@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "Andaaz - Online Watch Store",
     description:
       "A full-stack e-commerce watch store featuring product listings, secure checkout, order confirmation, inventory management, and a comprehensive admin dashboard. Built with customizable homepage sections, accounting tools, and an intuitive interface for seamless store management.",
-    tech: ["Reactjs", "Tailwind CSS", "Nodejs", "PostgreSQL"],
+    tech: ["Reactjs", "Tailwind CSS", "Nodejs","Expressjs", "PostgreSQL"],
     githubUrl: "https://github.com/sqln-ctrl/behreadab-store",
     liveUrl: "https://behreadab-store.vercel.app",
     image: assets.Project1_image,
@@ -21,6 +21,35 @@ const PROJECTS = [
     liveUrl: "#",
     image: assets.Project2_image,
   },
+  {
+  title: "Horizon Boys Hostel - Marketing Website",
+
+  description:
+    "A modern, responsive website for Hostels. The website showcases rooms, facilities, meal plans, gallery, and hostel information, with WhatsApp integrated as the primary channel for bookings, room inquiries, meal-plan inquiries, and customer contact.",
+
+  tech: [
+    "React.js",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "React Hook Form",
+  ],
+
+  githubUrl: "https://github.com/sqln-ctrl/horizon-hostel",
+
+  liveUrl: "https://horizon-hostel.vercel.app/",
+
+  image: assets.Project3_image,
+},
+{
+  title: "UniShop - University Student Marketplace",
+  description:
+    "UniShop is a marketplace built for university students to buy, sell, and discover items within their campus community. It allows students to create listings, upload product images, manage their products, save items to a wishlist, contact sellers, and report listings, with an admin dashboard for managing users, listings, and reports.",
+  tech: ["Reactjs", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+  githubUrl: "https://github.com/sqln-ctrl/unishop",
+  liveUrl: "#",
+  image: assets.Project4_image,
+},
 ];
 
 function ProjectCard({
