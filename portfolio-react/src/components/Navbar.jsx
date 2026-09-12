@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
-import { Home, User, FileText, Mail } from "lucide-react";
+import { Code2, Home, User } from "lucide-react";
 import { useIsDesktop } from "../hooks/useIsDesktop.js";
 import { scrollToId } from "../utils/scrollToId.js";
 
 const NAV_LINKS = [
   { target: "profile", label: "Home" },
   { target: "about", label: "About" },
+  { target: "skills", label: "Skills" },
+  { target: "services", label: "Services" },
   { target: "projects", label: "Projects" },
 ];
 
 const COMPACT_LINKS = [
   { target: "profile", label: "Home", Icon: Home },
-  { target: "about", label: "About", Icon: User }
+  { target: "about", label: "About", Icon: User },
+  { target: "skills", label: "Skills", Icon: Code2 },
 ];
 
 const PILL_BASE =

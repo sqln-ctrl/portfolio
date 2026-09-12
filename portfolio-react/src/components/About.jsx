@@ -1,18 +1,4 @@
-import { GraduationCap, BriefcaseBusiness, ArrowDown } from "lucide-react";
-
-
-import {
-  FaReact,
-  FaPython,
-  FaGithub,
-} from "react-icons/fa";
-
-import {
-  SiTailwindcss,
-  SiJavascript,
-  SiDjango,
-  SiFastapi,
-} from "react-icons/si";
+import { GraduationCap, BriefcaseBusiness } from "lucide-react";
 
 function About() {
   return (
@@ -97,58 +83,6 @@ function About() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="mt-12">
-  <h2 className="text-3xl font-bold text-center mb-8">
-    My Expertise
-  </h2>
-
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <FaReact className="text-5xl text-sky-500 mb-3" />
-      <p className="font-medium">React JS</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <SiTailwindcss className="text-5xl text-cyan-500 mb-3" />
-      <p className="font-medium">Tailwind CSS</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <SiJavascript className="text-5xl text-yellow-400 mb-3" />
-      <p className="font-medium">JavaScript</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <FaPython className="text-5xl text-blue-500 mb-3" />
-      <p className="font-medium">Python</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <SiDjango className="text-5xl text-green-700 mb-3" />
-      <p className="font-medium">Django</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <SiFastapi className="text-5xl text-emerald-500 mb-3" />
-      <p className="font-medium">FastAPI</p>
-    </div>
-
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
-      <FaGithub className="text-5xl text-black mb-3" />
-      <p className="font-medium">GitHub</p>
-    </div>
-  </div>
-</div>
-
-      {/* Down Arrow */}
-      <div className="flex justify-center items-center mt-12 max-[1200px]:hidden">
-        <ArrowDown
-          size={36}
-          strokeWidth={2}
-          className="cursor-pointer text-gray-800 hover:text-black transition-all duration-300 animate-bounce"
-          
-        />
       </div>
     </section>
   );
