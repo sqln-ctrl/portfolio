@@ -6,6 +6,7 @@ export const assets = {
   Project1_image:`../assets/andaaz image.png`,
   Project2_image:`../assets/leadforge.png`,
   Project3_image:`../assets/horizon-hostel.jpg`,
+  Project4_image:`../assets/unishop.png`,
 };
 
 export default assets;

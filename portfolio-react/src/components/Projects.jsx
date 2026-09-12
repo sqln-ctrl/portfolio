@@ -47,7 +47,7 @@ const PROJECTS = [
     "UniShop is a marketplace built for university students to buy, sell, and discover items within their campus community. It allows students to create listings, upload product images, manage their products, save items to a wishlist, contact sellers, and report listings, with an admin dashboard for managing users, listings, and reports.",
   tech: ["Reactjs", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
   githubUrl: "https://github.com/sqln-ctrl/unishop",
-  liveUrl: "#",
+  liveUrl: "https://unishop-three.vercel.app/",
   image: assets.Project4_image,
 },
 ];
